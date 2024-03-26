@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        p {
+            height: 50px;
+            font-size: 40px;
+            line-height: 50px;
+            color: green;
+            animation: blinking 1s infinite;
+        }
+
+        @keyframes blinking {
+            0% {
+                border-right: 1px solid green;
+            }
+
+            50% {
+                border-right: 0;
+            }
+
+            100% {
+                border-right: 1px solid green;
+            }
+        }
+    </style>
+</head>
+
+<body class="h-screen bg-black flex justify-center items-center">
+    <p id="contain"></p>
+    <script src="./day20.js"></script>
+</body>
+
+</html>

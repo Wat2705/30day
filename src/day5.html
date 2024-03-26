@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        @keyframes moveBtn {
+            0%{
+                transform: translateX(400px);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        @keyframes closeBtn {
+            0%{
+                transform: translateX(0px);
+            }
+
+            100%{
+                transform: translateX(400px);
+            }
+        }
+
+        @keyframes moveIcon {
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(180px);
+            }
+        }
+
+        @keyframes closeIcon {
+            0%{
+                transform: translateX(180px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-green-400">
+    <div id="container" class="flex relative overflow-hidden" style="width: 400px; height: 70px;">
+        <input id="searchbox" type="text" class="text-white bg-black font-medium rounded-l-lg text-sm h-full" style="display: none; width: 330px;"/>
+        <i id="search" class="fa fa-search bg-white absolute rounded-lg" style="font-size: 25px; cursor: pointer; padding: 20px; width: 70px; height: 70px; right: 45%;" aria-hidden="true"></i>
+    </div>
+    <script src="./day5.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>

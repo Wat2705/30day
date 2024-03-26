@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <!-- <link rel="stylesheet" href="../node_modules/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <style>
+        button,
+        input,
+        a {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            position: relative;
+            background-color: white;
+        }
+
+        i {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px !important;
+        }
+    </style>
+</head>
+
+<body class="h-screen flex flex-col items-center">
+    <nav class="w-full bg-emerald-500 flex justify-between" style="height: 10vh;">
+        <div class="flex items-center gap-5 ml-5">
+            <input id="color" type="color">
+            <button id="eraser"><i class="fa-solid fa-eraser"></i></i></button>
+            <button id="decrease"><i class="fa-solid fa-minus"></i></button>
+            <button>
+                <p id="size" style="line-height: 50px;">10</p>
+            </button>
+            <button id="increase"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="flex items-center gap-5 mr-5">
+            <a id="save"><i class="fa-solid fa-download"></i></a>
+            <button id="clear"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+    </nav>
+    <canvas class="border border-black" width="1000px" height="500px"></canvas>
+    <script type="module" src="./day19.js"></script>
+    <script src="https://kit.fontawesome.com/b6c22c7577.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

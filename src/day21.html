@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        #toggle {
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: rgb(156 163 175);
+        }
+
+        .circle {
+            width: 20px;
+            height: 28px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        .inBtn {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(85, 106, 245);
+            color: white;
+        }
+
+        .box {
+            background-color: rgb(209 213 219);
+            border-radius: 10px;
+        }
+
+        .box.dark.on {
+            background-color: rgb(31 41 55);
+        }
+
+        .box.dark.on>.btn>.inBtn {
+            background-color: green;
+        }
+
+        body.dark.on {
+            background-color: rgb(3 7 18);
+        }
+
+        h1.dark.on {
+            color: green;
+        }
+
+        .box.dark.on {
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="dark">
+    <nav class="flex justify-between">
+        <h1 class="dark" style="font-size: 20px; font-weight: 700;">Nodemy</h1>
+        <!-- <button id="toggle" class="slide border">Toggle</button> -->
+        <div id="toggle" class="rounded-2xl">
+            <div class="circle bg-white rounded-full"></div>
+        </div>
+    </nav>
+    <div class="content flex flex-col items-center mt-10">
+        <h1 class="dark" style="font-size: 30px; font-weight: 700;">
+            Light/Dark mode
+        </h1>
+        <div class="dark box w-4/5 mt-5 p-5 flex flex-col items-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim blanditiis repellat suscipit, cumque
+            inventore, voluptatem quaerat nesciunt voluptatibus eius ad libero. Cumque facilis sapiente recusandae
+            quidem in veniam similique iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ratione
+            saepe illo repellat voluptas magnam reprehenderit incidunt sunt animi eveniet eum molestias sed, nihil,
+            praesentium porro reiciendis ullam consequuntur laboriosam.
+            <div class="btn mt-5 w-1/2 flex justify-between">
+                <button class="inBtn">Nodemy</button>
+                <button class="inBtn">Youtube</button>
+                <button class="inBtn">Facebook</button>
+            </div>
+        </div>
+    </div>
+    <script src="./day21.js"></script>
+</body>
+
+</html>
